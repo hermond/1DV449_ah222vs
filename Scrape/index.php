@@ -9,5 +9,5 @@ require_once("Scrape.php");
  */
  $scrape = new Scrape();
 
-$scrape->Scrape();
+echo $scrape->Scrape();
 

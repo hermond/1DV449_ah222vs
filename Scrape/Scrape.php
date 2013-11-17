@@ -11,24 +11,46 @@ class Scrape {
 
     public function Scrape()
     {
-        $url = "http://vhost3.lnu.se:20080/~1dv449/scrape/";
-        $data = $this->getDataFromUrl($url);
-        var_dump($data);
+        $url = "http://vhost3.lnu.se:20080/~1dv449/scrape/check.php";
+        return $this->getDataFromUrl($url);
 
 
     }
 
     public function getDataFromUrl($url)
     {
-        $curl = curl_init();
-        $username = $_REQUEST['username'];
-        $password = $_REQUEST['password'];
-        
-        curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        $data = curl_exec($curl);
-        curl_close($curl);
-        return $data;
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+        $post_arr = array(
+          "username"=>"admin",
+            "password"=>"admin"
+        );
+
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_arr);
+      $cookie = "kaka.txt";
+
+
+        //curl_setopt($ch, CURLOPT_HEADER, 1);
+        //curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+        curl_setopt ($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_COOKIEJAR, dirname(__FILE__)."/".$cookie);
+        curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
+
+
+
+        $data = curl_exec($ch);
+        curl_close($ch);
+        //var_dump($data);
+         $this->getDOMContent($data);
+    }
+
+    public function getDOMContent($data)
+    {
+
+        $theDOM = new DOM();
+
     }
 
 }
