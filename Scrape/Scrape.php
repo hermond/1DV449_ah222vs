@@ -9,10 +9,19 @@
 
 class Scrape {
 
+    private $ScrapeDAL;
+
+    private static $url = "http://vhost3.lnu.se:20080/~1dv449/scrape/check.php";
+
+    public function construct__()
+    {
+        $this->ScrapeDAL = new ScrapeDAL();
+    }
+
     public function Scrape()
     {
-        $url = "http://vhost3.lnu.se:20080/~1dv449/scrape/check.php";
-        return $this->getDataFromUrl($url);
+
+        $this->getDataFromUrl(self::$url);
 
 
     }
@@ -49,7 +58,40 @@ class Scrape {
     public function getDOMContent($data)
     {
 
-        $theDOM = new DOM();
+        $theDOM = new DOMDocument();
+        if ($theDOM->loadHTML($data))
+        {
+            $xpath = new DOMXPath($theDOM);
+            $items = $xpath->query("//table[@class='table table-striped']/tr/td[1]/a/@href");
+            for ($i=0; $i < $items->length; $i++)
+            {
+            $this->ScrapeProducerPage((string)$items->item($i)->nodeValue);
+            }
+        }
+        else
+        {
+           echo "Error";
+        }
+
+    }
+
+    public function ScrapeProducerPage($link)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, self::$url.$link);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+
+        $cookie = "kaka.txt";
+
+        curl_setopt ($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_COOKIEJAR, dirname(__FILE__)."/".$cookie);
+        curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
+
+
+
+        $data = curl_exec($ch);
+        curl_close($ch);
 
     }
 

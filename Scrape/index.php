@@ -7,6 +7,7 @@ require_once("Scrape.php");
  * Time: 14:50
  * To change this template use File | Settings | File Templates.
  */
+
  $scrape = new Scrape();
 
 echo $scrape->Scrape();
