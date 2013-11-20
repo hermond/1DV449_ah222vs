@@ -4,7 +4,7 @@
     <list default="true" id="ef6068a8-3571-4e41-80b9-a9d42c40bc36" name="Default" comment="" />
     <ignored path="Scrape.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Scrape.php" changelist="ef6068a8-3571-4e41-80b9-a9d42c40bc36" time="1384956824584" ignored="false" />
+    <file path="/Scrape.php" changelist="ef6068a8-3571-4e41-80b9-a9d42c40bc36" time="1384965639231" ignored="false" />
     <file path="/index.php" changelist="ef6068a8-3571-4e41-80b9-a9d42c40bc36" time="1384727085823" ignored="false" />
     <file path="/Dummy.txt" changelist="ef6068a8-3571-4e41-80b9-a9d42c40bc36" time="1384954192665" ignored="false" />
     <file path="$PROJECT_DIR$/../../projektet/admin/model/SettingsDAL.php" changelist="ef6068a8-3571-4e41-80b9-a9d42c40bc36" time="1384954364987" ignored="false" />
@@ -32,7 +32,16 @@
       <file leaf-file-name="Scrape.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scrape.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.22807017">
+            <state line="105" column="53" selection-start="2611" selection-end="2611" vertical-scroll-proportion="0.73457944">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple_html_dom.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple_html_dom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.307693">
               <folding />
             </state>
           </provider>
@@ -59,7 +68,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="24" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+            <state line="10" column="24" selection-start="222" selection-end="222" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
@@ -162,7 +171,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -172,7 +181,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18712121" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -245,13 +254,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Scrape.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kaka.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -315,16 +317,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kaka.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+        <state line="10" column="24" selection-start="222" selection-end="222" vertical-scroll-proportion="-6.5384617">
           <folding />
         </state>
       </provider>
@@ -336,9 +331,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/curl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1211" column="9" selection-start="29025" selection-end="29072" vertical-scroll-proportion="-5.230994">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kaka.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="9" selection-start="5929" selection-end="5957" vertical-scroll-proportion="0.35672516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_html_dom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.307693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Scrape.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.22807017">
+        <state line="105" column="53" selection-start="2611" selection-end="2611" vertical-scroll-proportion="0.73457944">
           <folding />
         </state>
       </provider>

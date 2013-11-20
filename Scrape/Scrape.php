@@ -6,12 +6,14 @@
  * Time: 14:25
  * To change this template use File | Settings | File Templates.
  */
+require_once("simple_html_dom.php");
 
 class Scrape {
 
     private $ScrapeDAL;
 
     private static $url = "http://vhost3.lnu.se:20080/~1dv449/scrape/check.php";
+    private static $loggedInUrl = "http://vhost3.lnu.se:20080/~1dv449/scrape/secure/";
 
     public function construct__()
     {
@@ -40,12 +42,9 @@ class Scrape {
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post_arr);
       $cookie = "kaka.txt";
 
-
-        //curl_setopt($ch, CURLOPT_HEADER, 1);
-        //curl_setopt($ch, CURLINFO_HEADER_OUT, true);
         curl_setopt ($ch, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($ch, CURLOPT_COOKIEJAR, dirname(__FILE__)."/".$cookie);
-        curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
+        curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__)."/".$cookie);
 
 
 
@@ -62,10 +61,11 @@ class Scrape {
         if ($theDOM->loadHTML($data))
         {
             $xpath = new DOMXPath($theDOM);
-            $items = $xpath->query("//table[@class='table table-striped']/tr/td[1]/a/@href");
+            $items = $xpath->query("//table[@class='table table-striped']/tr/td[1]/a");
             for ($i=0; $i < $items->length; $i++)
             {
-            $this->ScrapeProducerPage((string)$items->item($i)->nodeValue);
+            $this->ScrapeProducerPage((string)$items->item($i)->nodeValue, (string)$items->item($i)->getAttribute("href") );
+
             }
         }
         else
@@ -75,24 +75,36 @@ class Scrape {
 
     }
 
-    public function ScrapeProducerPage($link)
+    public function ScrapeProducerPage($name, $link)
     {
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, self::$url.$link);
+        curl_setopt($ch, CURLOPT_URL, self::$loggedInUrl.$link);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 
         $cookie = "kaka.txt";
+        //curl_setopt($ch, CURLOPT_HEADER, 1);
+        //curl_setopt($ch, CURLINFO_HEADER_OUT, true);
 
-        curl_setopt ($ch, CURLOPT_FOLLOWLOCATION, 1);
-        curl_setopt($ch, CURLOPT_COOKIEJAR, dirname(__FILE__)."/".$cookie);
-        curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
+
+
+        curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__)."/".$cookie);
 
 
 
         $data = curl_exec($ch);
         curl_close($ch);
+        $this->getDOMContentFromProducerPage($name, $data);
 
     }
 
+    public function getDOMContentFromProducerPage($name, $data)
+    {
+        //echo $data;
+        $htmlParser = new simple_html_dom();
+        $htmlParser->load($data);
+        var_dump($htmlParser->find('div.hero-unit a'));
+
+
+    }
 }
