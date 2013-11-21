@@ -1,0 +1,47 @@
+
+body
+{
+    background: deepskyblue;
+    font-family: Tahoma;
+}
+
+#container{
+    width: 80%;
+    margin: 0px auto;
+    background: #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.producer-box{
+    padding: 3px;
+    width: 40%;
+    margin: 0px auto;
+    border: 1px solid #7c7c7c;
+    margin-top: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+#header
+{
+    width: 40%;
+    margin: 0px auto;
+}
+
+#header a
+{
+    background: dodgerblue;
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}

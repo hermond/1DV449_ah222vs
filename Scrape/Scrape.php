@@ -49,6 +49,8 @@ class Scrape {
 
 
         $data = curl_exec($ch);
+
+        $data = @mb_convert_encoding($data, 'HTML-ENTITIES', 'utf-8');
         curl_close($ch);
          $this->getDOMContent($data);
     }
@@ -61,10 +63,10 @@ class Scrape {
         {
             $xpath = new DOMXPath($theDOM);
             $items = $xpath->query("//table[@class='table table-striped']/tr/td[1]/a");
-
             foreach ($items as $item)
             {
-            $this->ScrapeProducerPage((string)$item->nodeValue, (string)$item->getAttribute("href") );
+
+            $this->ScrapeProducerPage($item->nodeValue, $item->getAttribute("href") );
 
             }
         }

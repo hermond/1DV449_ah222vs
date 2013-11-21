@@ -28,14 +28,16 @@ class View {
         <html>
         <head>
         <title>Producenter</title>
-        <meta charset='UTF-8'>
-        <meta http-equiv='content-language' content='sv'>
-        <link rel='stylesheet' type='text/css' href='style/frontend.css'>
+        <meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+        <link rel='stylesheet' type='text/css' href='style.css'>
         </head>
 
         <body>
-        <div id ='container'>
-        <div id = 'navigation'>
+        <div id='container'>
+
+        <div id='header'>
+        <h1>Laboration 1 - ah222vs</h1>
+        <a href='index.php'>Hem</a>
         <a href='?".self::$isScraping."'>Skrapa</a>
         <a href='?".self::$isShowingAll."'>Visa alla skrapningar som gjorts</a>
         </div>";
@@ -48,16 +50,25 @@ class View {
         {
          $producers = $this->scrapeDAL->getProducersFromLatestScrape();
         }
-        
+
         foreach ($producers as $producer)
         {
             $html .= "<div class='producer-box'>
             <p><span class='bold'>Namn: </span>".$producer->getName()."</p>
-            <p><span class='bold'>Producent ID: </span>".$producer->getID()."</p>
-            <p><span class='bold'>Hemsida: </span>".$producer->getWebsite()."</p>
-            <p><span class='bold'>Ort: </span>".$producer->getCity()."</p>
+            <p><span class='bold'>Producent ID: </span>".$producer->getID()."</p>";
+
+            if(preg_match("/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/",$producer->getWebsite())){
+            $html .= "<p><span class='bold'>Hemsida: </span><a href='".$producer->getWebsite()."'>".$producer->getWebsite()."</a></p>";
+            }
+            else
+            {
+            $html .= "<p><span class='bold'>Hemsida: </span>Finns ej eller fungerar inte</p>";
+            }
+
+
+            $html .= "<p><span class='bold'>Ort: </span>".$producer->getCity()."</p>
             <p><span class='bold'>Http-status: </span>".$producer->getStatus()."</p>
-            <p><span class='bold'>Senaste skrapad: </span>".$producer->getDateScraped()."</p>
+            <p><span class='bold'>Skrapad: </span>".$producer->getDateScraped()."</p>
             </div>
             ";
 

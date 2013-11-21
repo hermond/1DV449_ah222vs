@@ -61,7 +61,7 @@ class ScrapeDAL {
 
     public function getProducersFromLatestScrape()
     {
-        $statement = $this->getDBConnection()->prepare("SELECT Name, ID, Website, City, Status, DateScraped FROM Producers");
+        $statement = $this->getDBConnection()->prepare("SELECT DISTINCT Name, ID, Website, City, Status, MAX(DateScraped) FROM Producers GROUP BY Name");
 
         $statement->execute();
 
@@ -69,7 +69,7 @@ class ScrapeDAL {
         while ($row = $statement->fetch(\PDO::FETCH_ASSOC)) {
             try {
 
-                $producers[] = new Producer($row['Name'], $row['ID'], $row['Website'], $row['City'], $row['Status'], $row['DateScraped']);
+                $producers[] = new Producer($row['Name'], $row['ID'], $row['Website'], $row['City'], $row['Status'], $row['MAX(DateScraped)']);
 
             }
 
