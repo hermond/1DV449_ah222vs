@@ -1,0 +1,25 @@
+1.
+--
+Jag valde att använda curl för själva skrapningen eftersom jag tyckte att det kändes säkert och bra för att hämta ut data.
+Dessutom fanns det bra instruktionstekniker och mycket dokumentation. PHP och Mysql använde jag eftersom det är två tekniker
+som jag nyligen använt mig av och känner mig trygg med.
+
+2.
+--
+*Man kan sänka servrar ifall man skrapar för intensivt.
+*Sidorna kan förändras vilket gör att HTML-strukten ser helt annorlunda ut och ett script fungerar då inte längre.
+*Att man kommer åt innehåll som man inte har rätt till
+*Att man kommer åt innehåll som inte har indexerats av sökmotorer än och därmed "snor" indexeringen.
+
+3.
+--
+Strukturen kan nog se väldigt annorlunda ut och ändra sig på minsta lilla uppdateringen som ägaren av sajten gör.
+
+4.
+--
+Dessvärre har jag inte gjort så mycket, mer än att se till att jag har rättighet att få skrapa koden. Uppdater jag koden ska jag
+se till att det inte går att skrapa med alltför små tidsintervall.
+
+5.
+--
+Att använda curl framförallt, men även ytterligare fått reptera hur man skriver php och jobbar med mysql.
