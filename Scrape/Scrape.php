@@ -6,7 +6,7 @@
  * Time: 14:25
  * To change this template use File | Settings | File Templates.
  */
-require_once("simple_html_dom.php");
+
 
 class Scrape {
 
@@ -15,16 +15,17 @@ class Scrape {
     private static $url = "http://vhost3.lnu.se:20080/~1dv449/scrape/check.php";
     private static $loggedInUrl = "http://vhost3.lnu.se:20080/~1dv449/scrape/secure/";
 
-    public function construct__()
+    private $producers = array();
+
+    public function __construct()
     {
         $this->ScrapeDAL = new ScrapeDAL();
+
     }
 
-    public function Scrape()
+    public function ScrapeIt()
     {
-
         $this->getDataFromUrl(self::$url);
-
 
     }
 
@@ -47,10 +48,8 @@ class Scrape {
         curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__)."/".$cookie);
 
 
-
         $data = curl_exec($ch);
         curl_close($ch);
-        //var_dump($data);
          $this->getDOMContent($data);
     }
 
@@ -62,9 +61,10 @@ class Scrape {
         {
             $xpath = new DOMXPath($theDOM);
             $items = $xpath->query("//table[@class='table table-striped']/tr/td[1]/a");
-            for ($i=0; $i < $items->length; $i++)
+
+            foreach ($items as $item)
             {
-            $this->ScrapeProducerPage((string)$items->item($i)->nodeValue, (string)$items->item($i)->getAttribute("href") );
+            $this->ScrapeProducerPage((string)$item->nodeValue, (string)$item->getAttribute("href") );
 
             }
         }
@@ -86,25 +86,43 @@ class Scrape {
         //curl_setopt($ch, CURLOPT_HEADER, 1);
         //curl_setopt($ch, CURLINFO_HEADER_OUT, true);
 
-
-
         curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__)."/".$cookie);
 
-
-
         $data = curl_exec($ch);
+        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
         curl_close($ch);
-        $this->getDOMContentFromProducerPage($name, $data);
+        $producerID = filter_var($link, FILTER_SANITIZE_NUMBER_INT);
+        $this->getDOMContentFromProducerPage($httpcode, $name, $producerID, $data);
 
     }
 
-    public function getDOMContentFromProducerPage($name, $data)
+    public function getDOMContentFromProducerPage($httpCode, $name, $producerID, $data)
     {
         //echo $data;
+        if($httpCode>=200 && $httpCode<300)
+        {
         $htmlParser = new simple_html_dom();
         $htmlParser->load($data);
-        var_dump($htmlParser->find('div.hero-unit a'));
 
+        $city = substr($htmlParser->find('span.ort', 0)->plaintext, 5);
+            if ($htmlParser->find('div.hero-unit a', 0)!=null)
+            {
+                 $website = $htmlParser->find('div.hero-unit a', 0)->plaintext;
+            }
+            else{
+                $website = "Hemsida saknas";
+            }
+
+            $producer = new Producer($name, $producerID, $website, $city, $httpCode, date("Y-m-d H:i:s"));
+        }
+        else
+        {
+
+            $producer = new Producer($name, $producerID, "Hemsida saknas", "Ort Saknas", $httpCode, date("Y-m-d H:i:s"));
+        }
+
+        $this->ScrapeDAL->AddProducer($producer);
 
     }
 }
