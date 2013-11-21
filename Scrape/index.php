@@ -1,5 +1,11 @@
 <?php
 require_once("Scrape.php");
+require_once("simple_html_dom.php");
+require_once("Producer.php");
+require_once("ScrapeDAL.php");
+require_once("View.php");
+require_once("Controller.php");
+
 /**
  * Created by JetBrains PhpStorm.
  * User: Hello World
@@ -8,7 +14,7 @@ require_once("Scrape.php");
  * To change this template use File | Settings | File Templates.
  */
 
- $scrape = new Scrape();
 
-echo $scrape->Scrape();
+$controller = new Controller();
+echo $controller->doControll();
 

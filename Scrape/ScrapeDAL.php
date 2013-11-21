@@ -11,19 +11,19 @@ class ScrapeDAL {
     /**
      * @var string
      */
-    private static $hostname = "mysql08.citynetwork.se";
+    private static $hostname = "mysql10.citynetwork.se";
     /**
      * @var string
      */
-    private static $username = "112745-eb11930";
+    private static $username = "112745-dd44690";
     /**
      * @var string
      */
-    private static $password = "MakeMake22";
+    private static $password = "scrape11";
     /**
      * @var string
      */
-    private static $dbName = "112745-projektet";
+    private static $dbName = "112745-scrape";
     /**
      * @var string
      */
@@ -45,17 +45,31 @@ class ScrapeDAL {
         return $pdo;
     }
 
-    public function getProducers()
+    public function AddProducer(Producer $producer)
     {
-        $statement = $this->getDBConnection()->prepare("SELECT MainStoreUrl, Hostname, Username, Password, Name FROM MainStoreDBSettings");
+        $statement = $this->getDBConnection()->prepare("INSERT INTO Producers (Name, ID, Website, City, Status, DateScraped)
+        VALUES (:name, :id, :website, :city, :status, :date)");
+
+        $statement->bindParam(':name', $producer->getName(), \PDO::PARAM_STR);
+        $statement->bindParam(':id', $producer->getID(), \PDO::PARAM_STR);
+        $statement->bindParam(':website', $producer->getWebsite(), \PDO::PARAM_STR);
+        $statement->bindParam(':city', $producer->getCity(), \PDO::PARAM_STR);
+        $statement->bindParam(':status', $producer->getStatus(), \PDO::PARAM_STR);
+        $statement->bindParam(':date', $producer->getDateScraped(), \PDO::PARAM_STR);
+        $statement->execute();
+    }
+
+    public function getProducersFromLatestScrape()
+    {
+        $statement = $this->getDBConnection()->prepare("SELECT Name, ID, Website, City, Status, DateScraped FROM Producers");
 
         $statement->execute();
 
-
+        $producers = array();
         while ($row = $statement->fetch(\PDO::FETCH_ASSOC)) {
             try {
 
-                $DBsettings = new MainStoreDBSettings($row['MainStoreUrl'], $row['Hostname'], $row['Username'], $row['Password'], $row['Name']);
+                $producers[] = new Producer($row['Name'], $row['ID'], $row['Website'], $row['City'], $row['Status'], $row['DateScraped']);
 
             }
 
@@ -65,7 +79,30 @@ class ScrapeDAL {
 
         }
 
-        return $DBsettings;
+        return $producers;
+    }
+
+    public function getProducersFromAllScrapes()
+    {
+        $statement = $this->getDBConnection()->prepare("SELECT Name, ID, Website, City, Status, DateScraped FROM Producers");
+
+        $statement->execute();
+
+        $producers = array();
+        while ($row = $statement->fetch(\PDO::FETCH_ASSOC)) {
+            try {
+
+                $producers[] = new Producer($row['Name'], $row['ID'], $row['Website'], $row['City'], $row['Status'], $row['DateScraped']);
+
+            }
+
+            catch (\Exception $e) {
+
+            }
+
+        }
+
+        return $producers;
     }
 
 }
