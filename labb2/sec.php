@@ -51,8 +51,8 @@ function isUser($u, $p) {
 	$stm;	
 	try {
 		$stm = $db->prepare("SELECT id FROM users WHERE username = :u AND password = :p");
-        $stm->bindParam(':u', $u, \PDO::PARAM_STR);
-        $stm->bindParam(':p', $p, \PDO::PARAM_STR);
+        $stm->bindParam(':u', $u, PDO::PARAM_STR);
+        $stm->bindParam(':p', $p, PDO::PARAM_STR);
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}
@@ -85,7 +85,7 @@ function getUser($user) {
 	try {
 
 		$stm = $db->prepare("SELECT * FROM users WHERE username = :user");
-        $stm->bindParam(':user', $user, \PDO::PARAM_STR);
+        $stm->bindParam(':user', $user, PDO::PARAM_STR);
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}

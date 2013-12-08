@@ -18,7 +18,7 @@ function getMessage($nr) {
 	$stm;	
 	try {
 		$stm = $db->prepare("SELECT * FROM messages WHERE serial = :nr");
-        $stm->bindParam(':nr', $nr, \PDO::PARAM_INT);
+        $stm->bindParam(':nr', $nr, PDO::PARAM_INT);
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}
@@ -51,7 +51,7 @@ function getMessageIdForProducer($pid) {
 	$stm;	
 	try {
 		$stm = $db->prepare("SELECT * FROM messages WHERE pid = :pid ORDER BY date DESC");
-        $stm->bindParam(':pid', $pid, \PDO::PARAM_INT);;
+        $stm->bindParam(':pid', $pid, PDO::PARAM_INT);;
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}
@@ -83,7 +83,7 @@ function getProducer($id) {
 	$stm;	
 	try {
 		$stm = $db->prepare("SELECT * FROM Producers WHERE producerID = :id");
-        $stm->bindParam(':id', $id, \PDO::PARAM_INT);
+        $stm->bindParam(':id', $id, PDO::PARAM_INT);
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}
