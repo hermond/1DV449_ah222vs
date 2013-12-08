@@ -164,23 +164,27 @@
 
                                 // all the id:s for the messages for this producer
                                 var ids = JSON.parse(data);
-                                //console.log(ids);
+                                console.log(ids);
+
+
 
                                 // Loop through all the ids and make calls for the messages
                                 if(ids !== false){
                                     ids.forEach(function(entry) {
+                                        $( "#mess_p_mess" ).append( "<p class='message_container'>" +entry.message +"<br />Skrivet av: " +entry.name +"<br />Datum: " +entry.date +"</p>");
+                                        console.log(entry.message);
                                         // problems with the messages not coming in the right order :/
-                                        $.ajax({
-                                            type: "GET",
-                                            url: "functions.php",
-                                            data: {function: "getMessage", serial: entry.serial},
-                                            timeout: 2000
-                                        }).done(function(data) {
-                                                var j = JSON.parse(data);
+                                       // $.ajax({
+                                       //     type: "GET",
+                                         //   url: "functions.php",
+                                           // data: {function: "getMessage", serial: entry.serial},
+                                           // timeout: 2000
+                                       // }).done(function(data) {
+                                                //var j = JSON.parse(data);
                                                 //	console.log(j);
-                                                $( "#mess_p_mess" ).append( "<p class='message_container'>" +j.message +"<br />Skrivet av: " +j.name +"</p>");
+                                               // $( "#mess_p_mess" ).append( "<p class='message_container'>" +j.message +"<br />Skrivet av: " +j.name +"</p>");
 
-                                            });
+                                         //   });
                                     });
                                 }
 

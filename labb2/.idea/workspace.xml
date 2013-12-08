@@ -6,10 +6,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/style.css" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386287020531" ignored="false" />
     <file path="/index.php" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386172328723" ignored="false" />
-    <file path="/mess.php" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386474318458" ignored="false" />
+    <file path="/mess.php" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386530327087" ignored="false" />
     <file path="/*.regexp" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386271990966" ignored="false" />
-    <file path="/get.php" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386428539543" ignored="false" />
-    <file path="/add.php" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386430145494" ignored="false" />
+    <file path="/get.php" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386530546231" ignored="false" />
+    <file path="/add.php" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386530157289" ignored="false" />
     <file path="/functions.php" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386474765750" ignored="false" />
     <file path="/sec.php" changelist="79dbfc44-fd19-4410-8b9f-0c1656d7076f" time="1386472249206" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="20" selection-start="453" selection-end="453" vertical-scroll-proportion="0.5191919">
+            <state line="20" column="20" selection-start="453" selection-end="453" vertical-scroll-proportion="-4.4615383">
               <folding />
             </state>
           </provider>
@@ -71,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="get.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="12" selection-start="278" selection-end="278" vertical-scroll-proportion="45.307693">
+            <state line="59" column="21" selection-start="1163" selection-end="1163" vertical-scroll-proportion="2.0262625">
               <folding />
             </state>
           </provider>
@@ -83,7 +83,7 @@
       <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="8" selection-start="580" selection-end="635" vertical-scroll-proportion="-12.346154">
+            <state line="26" column="23" selection-start="802" selection-end="802" vertical-scroll-proportion="-11.346154">
               <folding />
             </state>
           </provider>
@@ -101,15 +101,14 @@
       <file leaf-file-name="mess.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="18" selection-start="2800" selection-end="2800" vertical-scroll-proportion="-7.3461537">
+            <state line="177" column="58" selection-start="7133" selection-end="7133" vertical-scroll-proportion="-10.307693">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1386474642921" expanded="true" signature="4067:7387" placeholder="..." />
-                <marker date="1386474642921" expanded="true" signature="6257:7388" placeholder="{...}" />
-                <marker date="1386474642921" expanded="true" signature="6597:7388" placeholder="{...}" />
-                <marker date="1386474642921" expanded="true" signature="6663:7388" placeholder="{...}" />
-                <marker date="1386474642921" expanded="true" signature="6815:7137" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
-                <marker date="1386474642921" expanded="true" signature="7159:7388" placeholder="{...}" />
+                <marker date="1386530358569" expanded="true" signature="4067:7659" placeholder="..." />
+                <marker date="1386530358569" expanded="true" signature="6257:7660" placeholder="{...}" />
+                <marker date="1386530358569" expanded="true" signature="6597:7660" placeholder="{...}" />
+                <marker date="1386530358569" expanded="true" signature="6663:7660" placeholder="{...}" />
+                <marker date="1386530358569" expanded="true" signature="7427:7660" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -145,11 +144,11 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/check.php" />
-        <option value="$PROJECT_DIR$/get.php" />
-        <option value="$PROJECT_DIR$/add.php" />
         <option value="$PROJECT_DIR$/sec.php" />
-        <option value="$PROJECT_DIR$/mess.php" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/add.php" />
+        <option value="$PROJECT_DIR$/mess.php" />
+        <option value="$PROJECT_DIR$/get.php" />
       </list>
     </option>
   </component>
@@ -244,7 +243,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -388,23 +387,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="-0.88461536">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/check.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="27" selection-start="222" selection-end="222" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="278" selection-end="278" vertical-scroll-proportion="45.307693">
           <folding />
         </state>
       </provider>
@@ -416,31 +401,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="580" selection-end="635" vertical-scroll-proportion="-12.346154">
+        <state line="14" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="-0.88461536">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="20" selection-start="453" selection-end="453" vertical-scroll-proportion="-4.4615383">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="18" selection-start="2800" selection-end="2800" vertical-scroll-proportion="-7.3461537">
+        <state line="177" column="58" selection-start="7133" selection-end="7133" vertical-scroll-proportion="-10.307693">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1386474642921" expanded="true" signature="4067:7387" placeholder="..." />
-            <marker date="1386474642921" expanded="true" signature="6257:7388" placeholder="{...}" />
-            <marker date="1386474642921" expanded="true" signature="6597:7388" placeholder="{...}" />
-            <marker date="1386474642921" expanded="true" signature="6663:7388" placeholder="{...}" />
-            <marker date="1386474642921" expanded="true" signature="6815:7137" placeholder="{&quot;type&quot;: &quot;GET&quot;...}" />
-            <marker date="1386474642921" expanded="true" signature="7159:7388" placeholder="{...}" />
+            <marker date="1386530358569" expanded="true" signature="4067:7659" placeholder="..." />
+            <marker date="1386530358569" expanded="true" signature="6257:7660" placeholder="{...}" />
+            <marker date="1386530358569" expanded="true" signature="6597:7660" placeholder="{...}" />
+            <marker date="1386530358569" expanded="true" signature="6663:7660" placeholder="{...}" />
+            <marker date="1386530358569" expanded="true" signature="7427:7660" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
+    <entry file="file://$PROJECT_DIR$/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="20" selection-start="453" selection-end="453" vertical-scroll-proportion="0.5191919">
+        <state line="26" column="23" selection-start="802" selection-end="802" vertical-scroll-proportion="-11.346154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="21" selection-start="1163" selection-end="1163" vertical-scroll-proportion="2.0262625">
           <folding />
         </state>
       </provider>

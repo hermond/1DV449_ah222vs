@@ -50,7 +50,7 @@ function getMessageIdForProducer($pid) {
 	$result;
 	$stm;	
 	try {
-		$stm = $db->prepare("SELECT serial FROM messages WHERE pid = :pid");
+		$stm = $db->prepare("SELECT * FROM messages WHERE pid = :pid ORDER BY date DESC");
         $stm->bindParam(':pid', $pid, \PDO::PARAM_INT);;
 		$stm->execute();
 		$result = $stm->fetchAll();

@@ -20,7 +20,8 @@ function addToDB($name, $message, $pid) {
 	
 	try {
 
-        $stm = $db->prepare("INSERT INTO messages (message, name, pid) VALUES(:message, :name, :pid)");
+        $stm = $db->prepare("INSERT INTO messages (date, message, name, pid) VALUES(:date, :message, :name, :pid)");
+        $stm->bindParam(':date', date("Y-m-d H:i:s"), \PDO::PARAM_STR);
         $stm->bindParam(':message', $message, \PDO::PARAM_STR);
         $stm->bindParam(':name', $name, \PDO::PARAM_STR);
         $stm->bindParam(':pid', $pid, \PDO::PARAM_INT);
