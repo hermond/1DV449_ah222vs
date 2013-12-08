@@ -34,7 +34,7 @@
       <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="20" selection-start="453" selection-end="453" vertical-scroll-proportion="-4.4615383">
+            <state line="20" column="20" selection-start="453" selection-end="453" vertical-scroll-proportion="-0.7307692">
               <folding />
             </state>
           </provider>
@@ -71,20 +71,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="get.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="21" selection-start="1163" selection-end="1163" vertical-scroll-proportion="2.0262625">
+            <state line="35" column="54" selection-start="673" selection-end="673" vertical-scroll-proportion="-1.6923077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="middle.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/middle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="23" selection-start="802" selection-end="802" vertical-scroll-proportion="-11.346154">
-              <folding />
+            <state line="5" column="41" selection-start="93" selection-end="93" vertical-scroll-proportion="0.14522822">
+              <folding>
+                <element signature="e#7#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,7 +103,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="-0.88461536">
+            <state line="14" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="2.3846154">
               <folding />
             </state>
           </provider>
@@ -101,14 +112,14 @@
       <file leaf-file-name="mess.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="58" selection-start="7133" selection-end="7133" vertical-scroll-proportion="-10.307693">
+            <state line="165" column="59" selection-start="6493" selection-end="6493" vertical-scroll-proportion="32.423077">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1386530358569" expanded="true" signature="4067:7659" placeholder="..." />
-                <marker date="1386530358569" expanded="true" signature="6257:7660" placeholder="{...}" />
-                <marker date="1386530358569" expanded="true" signature="6597:7660" placeholder="{...}" />
-                <marker date="1386530358569" expanded="true" signature="6663:7660" placeholder="{...}" />
-                <marker date="1386530358569" expanded="true" signature="7427:7660" placeholder="{...}" />
+                <marker date="1386537527143" expanded="true" signature="4067:7756" placeholder="..." />
+                <marker date="1386537527143" expanded="true" signature="6361:7757" placeholder="{...}" />
+                <marker date="1386537527143" expanded="true" signature="6692:7757" placeholder="{...}" />
+                <marker date="1386537527143" expanded="true" signature="6758:7757" placeholder="{...}" />
+                <marker date="1386537527143" expanded="true" signature="7524:7757" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -123,13 +134,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noimg.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/img/noimg.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -140,15 +144,15 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/img/middle.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/check.php" />
         <option value="$PROJECT_DIR$/sec.php" />
         <option value="$PROJECT_DIR$/functions.php" />
-        <option value="$PROJECT_DIR$/add.php" />
+        <option value="$PROJECT_DIR$/img/middle.php" />
         <option value="$PROJECT_DIR$/mess.php" />
         <option value="$PROJECT_DIR$/get.php" />
+        <option value="$PROJECT_DIR$/add.php" />
       </list>
     </option>
   </component>
@@ -218,6 +222,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labb2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labb2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -243,7 +261,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -326,13 +344,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/lightbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style-non-minified.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="718" column="13" selection-start="15540" selection-end="15540" vertical-scroll-proportion="0.0">
@@ -387,13 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="222" selection-end="222" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sec.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="41" selection-start="2144" selection-end="2144" vertical-scroll-proportion="-51.0">
@@ -401,45 +405,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/middle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="-0.88461536">
+        <state line="14" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="2.3846154">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="20" selection-start="453" selection-end="453" vertical-scroll-proportion="-4.4615383">
+        <state line="20" column="20" selection-start="453" selection-end="453" vertical-scroll-proportion="-0.7307692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="222" selection-end="222" vertical-scroll-proportion="-7.1923075">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="58" selection-start="7133" selection-end="7133" vertical-scroll-proportion="-10.307693">
+        <state line="165" column="59" selection-start="6493" selection-end="6493" vertical-scroll-proportion="32.423077">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1386530358569" expanded="true" signature="4067:7659" placeholder="..." />
-            <marker date="1386530358569" expanded="true" signature="6257:7660" placeholder="{...}" />
-            <marker date="1386530358569" expanded="true" signature="6597:7660" placeholder="{...}" />
-            <marker date="1386530358569" expanded="true" signature="6663:7660" placeholder="{...}" />
-            <marker date="1386530358569" expanded="true" signature="7427:7660" placeholder="{...}" />
+            <marker date="1386537527143" expanded="true" signature="4067:7756" placeholder="..." />
+            <marker date="1386537527143" expanded="true" signature="6361:7757" placeholder="{...}" />
+            <marker date="1386537527143" expanded="true" signature="6692:7757" placeholder="{...}" />
+            <marker date="1386537527143" expanded="true" signature="6758:7757" placeholder="{...}" />
+            <marker date="1386537527143" expanded="true" signature="7524:7757" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="23" selection-start="802" selection-end="802" vertical-scroll-proportion="-11.346154">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="1163" selection-end="1163" vertical-scroll-proportion="2.0262625">
+        <state line="35" column="54" selection-start="673" selection-end="673" vertical-scroll-proportion="-1.6923077">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="41" selection-start="93" selection-end="93" vertical-scroll-proportion="0.14522822">
+          <folding>
+            <element signature="e#7#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

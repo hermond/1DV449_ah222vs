@@ -159,20 +159,20 @@
                             type: "GET",
                             url: "functions.php",
                             data: {function: "getIdsOfMessages", pid: pid}
-
+                            //the name of the function should have been named "getMessagesFromProducer".
                         }).done(function(data) {
 
-                                // all the id:s for the messages for this producer
+                                // all the messages for this producer
                                 var ids = JSON.parse(data);
-                                console.log(ids);
+                                //console.log(ids);
 
 
 
-                                // Loop through all the ids and make calls for the messages
+                                // Loop through all the messages in the array and print them.
                                 if(ids !== false){
                                     ids.forEach(function(entry) {
                                         $( "#mess_p_mess" ).append( "<p class='message_container'>" +entry.message +"<br />Skrivet av: " +entry.name +"<br />Datum: " +entry.date +"</p>");
-                                        console.log(entry.message);
+                                        //console.log(entry.message);
                                         // problems with the messages not coming in the right order :/
                                        // $.ajax({
                                        //     type: "GET",

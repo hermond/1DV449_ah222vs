@@ -33,7 +33,7 @@ function getMessage($nr) {
 	 	return false;
 }
 
-
+//changes to get all messages from a producer and sort them by date.
 function getMessageIdForProducer($pid) {
 	$db = null;
 

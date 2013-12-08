@@ -3,6 +3,7 @@
 /**
 * Called from AJAX to add stuff to DB
 */
+//Method changed to also add a timestamp.
 function addToDB($name, $message, $pid) {
     $name = htmlspecialchars($name, ENT_QUOTES);
     $message = htmlspecialchars($message, ENT_QUOTES);
