@@ -223,6 +223,7 @@
                                     data: {function: "add", name: name_val, message: message_val, pid: pid, token: token}
                                 }).done(function(data) {
                                         //alert(data);
+                                        //Call the function changeProducer to display all messages after a new one is written.
                                         changeProducer(pid);
                                     });
 

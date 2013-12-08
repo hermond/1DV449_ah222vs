@@ -89,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="41" selection-start="93" selection-end="93" vertical-scroll-proportion="0.14522822">
+            <state line="5" column="41" selection-start="93" selection-end="93" vertical-scroll-proportion="-2.6923077">
               <folding>
                 <element signature="e#7#51#0" expanded="true" />
               </folding>
@@ -109,17 +109,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mess.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mess.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="59" selection-start="6493" selection-end="6493" vertical-scroll-proportion="32.423077">
+            <state line="227" column="39" selection-start="9619" selection-end="9619" vertical-scroll-proportion="0.52904564">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1386537527143" expanded="true" signature="4067:7756" placeholder="..." />
-                <marker date="1386537527143" expanded="true" signature="6361:7757" placeholder="{...}" />
-                <marker date="1386537527143" expanded="true" signature="6692:7757" placeholder="{...}" />
-                <marker date="1386537527143" expanded="true" signature="6758:7757" placeholder="{...}" />
-                <marker date="1386537527143" expanded="true" signature="7524:7757" placeholder="{...}" />
+                <marker date="1386539209770" expanded="true" signature="4067:7756" placeholder="..." />
+                <marker date="1386539209770" expanded="true" signature="6361:7757" placeholder="{...}" />
+                <marker date="1386539209770" expanded="true" signature="6692:7757" placeholder="{...}" />
+                <marker date="1386539209770" expanded="true" signature="6758:7757" placeholder="{...}" />
+                <marker date="1386539209770" expanded="true" signature="7524:7757" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -150,9 +150,9 @@
         <option value="$PROJECT_DIR$/sec.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/img/middle.php" />
-        <option value="$PROJECT_DIR$/mess.php" />
         <option value="$PROJECT_DIR$/get.php" />
         <option value="$PROJECT_DIR$/add.php" />
+        <option value="$PROJECT_DIR$/mess.php" />
       </list>
     </option>
   </component>
@@ -433,20 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="59" selection-start="6493" selection-end="6493" vertical-scroll-proportion="32.423077">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1386537527143" expanded="true" signature="4067:7756" placeholder="..." />
-            <marker date="1386537527143" expanded="true" signature="6361:7757" placeholder="{...}" />
-            <marker date="1386537527143" expanded="true" signature="6692:7757" placeholder="{...}" />
-            <marker date="1386537527143" expanded="true" signature="6758:7757" placeholder="{...}" />
-            <marker date="1386537527143" expanded="true" signature="7524:7757" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/get.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="54" selection-start="673" selection-end="673" vertical-scroll-proportion="-1.6923077">
@@ -456,9 +442,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="41" selection-start="93" selection-end="93" vertical-scroll-proportion="0.14522822">
+        <state line="5" column="41" selection-start="93" selection-end="93" vertical-scroll-proportion="-2.6923077">
           <folding>
             <element signature="e#7#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="227" column="39" selection-start="9619" selection-end="9619" vertical-scroll-proportion="0.52904564">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1386539209770" expanded="true" signature="4067:7756" placeholder="..." />
+            <marker date="1386539209770" expanded="true" signature="6361:7757" placeholder="{...}" />
+            <marker date="1386539209770" expanded="true" signature="6692:7757" placeholder="{...}" />
+            <marker date="1386539209770" expanded="true" signature="6758:7757" placeholder="{...}" />
+            <marker date="1386539209770" expanded="true" signature="7524:7757" placeholder="{...}" />
           </folding>
         </state>
       </provider>
