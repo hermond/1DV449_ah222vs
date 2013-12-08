@@ -158,6 +158,10 @@ Ajax där man först letar upp serialnumbers på varje producents meddelande för at
 att endast skicka med ett producerid och få tillbaka alla meddelanden(dvs använda den nya getMessage i get.php som returnerar en array med objekt). 
 Objekten loopas sedan ut med sina meddelande, skribenter och ett datum(som lagts till i databasen).   
 För att få ut meddelandet direkt efter att man skickat in det så såg jag till att javascript-funktionen changeProducer anropades efter åt igen.  
+
+Körbar länk: cetennisskola.se/webbteknik2-labb2/
+Användarnamn: admin
+Lösenord: detARkAlltiKalmarNu26
  
 
 
