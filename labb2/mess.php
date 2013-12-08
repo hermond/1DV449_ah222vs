@@ -34,7 +34,7 @@
 	    <div class="container">
 			<div class="header">
 			        <ul class="nav nav-pills pull-right">
-			             <li><button class="btn" id="logout">Logga ut</button></li>
+			             <li><a href="functions.php?function=logout"><button class="btn" id="logout">Logga ut</button></a></li>
 			        </ul>
 			        <h3 class="text-muted">Messy Labbage</h3>
 			      </div>
@@ -86,6 +86,12 @@
 				  		  	
 	        		<div class="col-md-6">
 				<p>Skriv ditt meddelande så dyker det upp i listan</p>
+                <?php
+                //session_start();
+                $token = uniqid(php_uname('n'), true);
+                $_SESSION['token'] = $token;
+                echo "<input id='t_' type='hidden' value='$token' />";
+                ?>
 				<input id="mess_inputs" type="hidden" value="" />
 				Namn: <br /><input id="name_txt" type="text" name="name" value="<?php echo $_SESSION['user']; ?>" /><br />
 				Meddelande: <br /><textarea id="message_ta" cols="50" rows="5" name="message"></textarea><br /><br />
@@ -205,13 +211,15 @@
                                 var name_val = $('#name_txt').val();
                                 var message_val = $('#message_ta').val();
                                 var pid =  $('#mess_inputs').val();
+                                var token = $('#t_').val();
                                 // make ajax call to logout
                                 $.ajax({
                                     type: "GET",
                                     url: "functions.php",
-                                    data: {function: "add", name: name_val, message: message_val, pid: pid}
+                                    data: {function: "add", name: name_val, message: message_val, pid: pid, token: token}
                                 }).done(function(data) {
-                                        alert(data);
+                                        //alert(data);
+                                        changeProducer(pid);
                                     });
 
                             });

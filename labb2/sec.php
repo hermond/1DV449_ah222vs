@@ -45,12 +45,14 @@ function isUser($u, $p) {
 	catch(PDOEception $e) {
 		die("Del -> " .$e->getMessage());
 	}
-	$q = "SELECT id FROM users WHERE username = '$u' AND password = '$p'";
+	//$q = ;
 
 	$result;
 	$stm;	
 	try {
-		$stm = $db->prepare($q);
+		$stm = $db->prepare("SELECT id FROM users WHERE username = :u AND password = :p");
+        $stm->bindParam(':u', $u, \PDO::PARAM_STR);
+        $stm->bindParam(':p', $p, \PDO::PARAM_STR);
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}
@@ -76,12 +78,14 @@ function getUser($user) {
 	catch(PDOEception $e) {
 		die("Del -> " .$e->getMessage());
 	}
-	$q = "SELECT * FROM users WHERE username = '$user'";
+	//$q = ;
 	
 	$result;
 	$stm;	
 	try {
-		$stm = $db->prepare($q);
+
+		$stm = $db->prepare("SELECT * FROM users WHERE username = :user");
+        $stm->bindParam(':user', $user, \PDO::PARAM_STR);
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}
@@ -98,7 +102,7 @@ function logout() {
 	if(!session_id()) {
 		sec_session_start();
 	}
-	session_end();
+	session_destroy();
 	header('Location: index.php');
 }
 

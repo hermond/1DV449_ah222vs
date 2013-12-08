@@ -11,11 +11,19 @@ if(isset($_GET['function'])) {
 	
 	if($_GET['function'] == 'logout') {
 		logout();
+        header("Location: index.php");
     } elseif($_GET['function'] == 'add') {
        
 	    $name = $_GET["name"];
 		$message = $_GET["message"];
 		$pid = $_GET["pid"];
+        $token = $_GET["token"];
+        if ($token != $_SESSION['token'])
+        {
+            echo "Det gick inte att lägga till en post";
+            die();
+
+        }
 		
 		addToDB($name, $message, $pid);
 		echo "Det gick fint! Ladda om sidan för att se ditt meddelande!";

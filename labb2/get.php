@@ -12,12 +12,13 @@ function getMessage($nr) {
 		die("Del -> " .$e->getMessage());
 	}
 	
-	$q = "SELECT * FROM messages WHERE serial = '$nr'";
+	//$q = ;
 	
 	$result;
 	$stm;	
 	try {
-		$stm = $db->prepare($q);
+		$stm = $db->prepare("SELECT * FROM messages WHERE serial = :nr");
+        $stm->bindParam(':nr', $nr, \PDO::PARAM_INT);
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}
@@ -44,12 +45,13 @@ function getMessageIdForProducer($pid) {
 		die("Del -> " .$e->getMessage());
 	}
 	
-	$q = "SELECT serial FROM messages WHERE pid = $pid";
+
 	
 	$result;
 	$stm;	
 	try {
-		$stm = $db->prepare($q);
+		$stm = $db->prepare("SELECT serial FROM messages WHERE pid = :pid");
+        $stm->bindParam(':pid', $pid, \PDO::PARAM_INT);;
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}
@@ -75,12 +77,13 @@ function getProducer($id) {
 		die("Del -> " .$e->getMessage());
 	}
 	
-	$q = "SELECT * FROM Producers WHERE producerID = '$id'";
+	//$q = ;
 	
 	$result;
 	$stm;	
 	try {
-		$stm = $db->prepare($q);
+		$stm = $db->prepare("SELECT * FROM Producers WHERE producerID = :id");
+        $stm->bindParam(':id', $id, \PDO::PARAM_INT);
 		$stm->execute();
 		$result = $stm->fetchAll();
 	}
