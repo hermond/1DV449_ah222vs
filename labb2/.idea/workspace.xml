@@ -89,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="5" selection-start="408" selection-end="408" vertical-scroll-proportion="0.52904564">
+            <state line="15" column="5" selection-start="408" selection-end="408" vertical-scroll-proportion="-9.807693">
               <folding>
                 <element signature="e#7#51#0" expanded="true" />
               </folding>
@@ -125,10 +125,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="check.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/check.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="222" selection-end="222" vertical-scroll-proportion="-7.1923075">
+            <state line="11" column="27" selection-start="222" selection-end="222" vertical-scroll-proportion="0.37777779">
               <folding />
             </state>
           </provider>
@@ -261,8 +261,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -419,13 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="222" selection-end="222" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mess.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="227" column="39" selection-start="9619" selection-end="9619" vertical-scroll-proportion="-9.807693">
@@ -456,10 +449,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="408" selection-end="408" vertical-scroll-proportion="0.52904564">
+        <state line="15" column="5" selection-start="408" selection-end="408" vertical-scroll-proportion="-9.807693">
           <folding>
             <element signature="e#7#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="222" selection-end="222" vertical-scroll-proportion="0.37777779">
+          <folding />
         </state>
       </provider>
     </entry>
