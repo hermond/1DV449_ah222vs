@@ -47,8 +47,10 @@ function initialize() {
 
             }
         }
+        $("#all").change(function(){
+            initialize();
+        });
         $("#vag").change(function(){
-            console.log(vagMessages);
             setPositionsOnMap(vagMessages);
         });
         $("#kollektiv").change(function(){
@@ -90,7 +92,7 @@ function setPositionsOnMap(messages)
     });
 
         marker.info = new google.maps.InfoWindow({
-            content: "<p>"+messages[i].description+"</p>"
+            content: "<p>" + messages[i].title + "</p><p>"+messages[i].subcategory+"</p><p>"+messages[i].description+"</p>"
         });
 
         (function(marker, map) {
@@ -99,15 +101,22 @@ function setPositionsOnMap(messages)
             });
         })(marker, map)
 
-       // returnMarker(marker, map);
+
 
 
     }
 
-    function returnMarker(marker, map) {
-        google.maps.event.addListener(marker, 'click', function() {
-            marker.info.open(map, marker);
-        });
-    }
+   // function returnMarker(marker, map) {
+       // google.maps.event.addListener(marker, 'click', function() {
+        //    marker.info.open(map, marker);
+      //  });
+    //}
 
+}
+
+function appendtoDiv(message)
+{
+
+    var messagesDiv = document.getElementById("messagesDiv");
+    var title 
 }
