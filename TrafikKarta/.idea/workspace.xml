@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/gettraffic.js" line="126" mnemonic="2" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="769c9930-69e4-429c-abc2-55325a0e46d4" name="Default" comment="" />
     <ignored path="TrafikKarta.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/gettraffic.js" changelist="769c9930-69e4-429c-abc2-55325a0e46d4" time="1387399662495" ignored="false" />
+    <file path="/gettraffic.js" changelist="769c9930-69e4-429c-abc2-55325a0e46d4" time="1387403079480" ignored="false" />
     <file path="/index.php" changelist="769c9930-69e4-429c-abc2-55325a0e46d4" time="1387140541817" ignored="false" />
     <file path="/inde12x.php" changelist="769c9930-69e4-429c-abc2-55325a0e46d4" time="1387250306989" ignored="false" />
-    <file path="/index.html" changelist="769c9930-69e4-429c-abc2-55325a0e46d4" time="1387251830696" ignored="false" />
+    <file path="/index.html" changelist="769c9930-69e4-429c-abc2-55325a0e46d4" time="1387401660630" ignored="false" />
+    <file path="/style.css" changelist="769c9930-69e4-429c-abc2-55325a0e46d4" time="1387402532086" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +34,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="35" selection-start="661" selection-end="661" vertical-scroll-proportion="-11.115385">
+            <state line="4" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="-2.6153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -39,7 +52,7 @@
       <file leaf-file-name="gettraffic.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gettraffic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="14" selection-start="3018" selection-end="3018" vertical-scroll-proportion="0.79376084">
+            <state line="83" column="31" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.8232236">
               <folding>
                 <element signature="e#0#164#0" expanded="false" />
               </folding>
@@ -60,6 +73,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/inde12x.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/gettraffic.js" />
       </list>
     </option>
@@ -275,14 +289,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="35" selection-start="661" selection-end="661" vertical-scroll-proportion="-11.115385">
+        <state line="4" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="-2.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gettraffic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="14" selection-start="3018" selection-end="3018" vertical-scroll-proportion="0.79376084">
+        <state line="83" column="31" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.8232236">
           <folding>
             <element signature="e#0#164#0" expanded="false" />
           </folding>

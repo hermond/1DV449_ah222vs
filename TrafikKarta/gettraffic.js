@@ -80,7 +80,8 @@ function setPositionsOnMap(messages)
         mapOptions);
     google.maps.event.addDomListener(window, 'load', initialize);
 
-
+    var messagesDiv = document.getElementById("messagesDiv");
+    messagesDiv.innerHTML = "";
 
     for (var i = 0; i < messages.length; i++ )
     {
@@ -102,7 +103,7 @@ function setPositionsOnMap(messages)
         })(marker, map)
 
 
-
+    appendtoDiv(messages[i]);
 
     }
 
@@ -118,5 +119,15 @@ function appendtoDiv(message)
 {
 
     var messagesDiv = document.getElementById("messagesDiv");
-    var title 
+    var title = document.createElement("p");
+    var subcategory = document.createElement("p");
+    var description = document.createElement("p");
+    title.innerHTML = message.title;
+    subcategory.innerHTML = "Typ: "+message.subcategory;
+    description.innerHTML = "Beskrivning: "+message.description;
+    messagesDiv.appendChild(title);
+    messagesDiv.appendChild(subcategory);
+    messagesDiv.appendChild(description);
+
+
 }
