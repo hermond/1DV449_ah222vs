@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Trafikvarningar i Sverige</title>
+    <style type='text/css'>
+        html { height: 100% }
+        body { height: 100%; margin: 0; padding: 0 }
+        #map-canvas { height: 50%; width: 50% }
+    </style>
+</head>
+<body>
+
+<div id='map-canvas'/>
+</div>
+<input type="radio" name="buttons" id="all" value="all" checked> All trafikinformation<br>
+<input type="radio" name="buttons" id="vag" value="vag"> Vägtrafik<br>
+<input type="radio" name="buttons" id="kollektiv" value="kollektiv"> Kollektivtrafik<br>
+<input type="radio" name="buttons" id="planerad" value="planerad"> Planerad störning<br>
+<input type="radio" name="buttons" id="ovrigt" value="ovrigt"> Övrigt
+
+
+<script src='gettraffic.js'></script>
+<script type='text/javascript'
+        src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCAQVduEkMwOpv5PCHrSnw92S4-5MaPyTA&sensor=true'>
+</script>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+</body>
+
+
+</hmtl>
