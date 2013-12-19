@@ -105,8 +105,8 @@ var Traffic = {
             });
 
             (function(markers, map, i) {
-                google.maps.event.addListener(Traffic.markers[i], 'click', function() {
-                    Traffic.markers[i].info.open(map, Traffic.markers[i]);
+                google.maps.event.addListener(markers[i], 'click', function() {
+                    markers[i].info.open(map, markers[i]);
                 });
             })(Traffic.markers, map, i);
 
